@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import Search from "@/components/Search";
 import Providers from "./Providers";
 import "./globals.css";
+import { Suspense } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,7 +20,9 @@ export default function RootLayout({ children }) {
         <Providers>
           <div className="container mx-auto">
             <Header />
-            <Navbar />
+            <Suspense fallback={<div>Loading Navbar...</div>}>
+              <Navbar />
+            </Suspense>
             <Search />
             {children}
           </div>
