@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
           <div className="container mx-auto">
             <Header />
             <Suspense fallback={<div>Loading Navbar...</div>}>
-              <Navbar />
+             <Navbar />
             </Suspense>
             <Search />
             {children}

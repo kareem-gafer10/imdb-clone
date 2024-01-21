@@ -15,6 +15,7 @@ const Card = ({result}) => {
         height={300}
         className="sm:rounded-t-lg group-hover:opacity-80 transition-opacity duration-200"
         alt="movie"
+        
       />
       <div className="p-2">
         <p className="line-clamp-2 text-md">{result.overview}</p>
