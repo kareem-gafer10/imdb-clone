@@ -1,6 +1,5 @@
 "use client";
 import { useSearchParams } from "next/navigation";
-
 import { navbarList } from "@/data/data";
 import Link from "next/link";
 
