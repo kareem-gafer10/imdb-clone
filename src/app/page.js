@@ -1,7 +1,6 @@
 import Results from "@/components/Results";
 import axios from "axios";
 
-const API_KEY=process.env.API_KEY
 
 
 
