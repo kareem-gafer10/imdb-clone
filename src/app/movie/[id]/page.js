@@ -5,7 +5,7 @@ import Image from "next/image";
 
  const getMovie= async(movieId)=> {
     const {data} = await axios.get(
-      `https://api.themoviedb.org/3/movie/${movieId}?api_key=${process.env.API_KEY}`
+      `https://api.themoviedb.org/3/movie/${movieId}?api_key=c0a753282bdc2008ffe4d6e4e1d6462c`
     );
     return data;
   }
