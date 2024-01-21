@@ -3,7 +3,7 @@ import axios from "axios";
 
 const SearchPage = async ({ params }) => {
   const { data } = await axios.get(
-    `https://api.themoviedb.org/3/search/movie?api_key=${process.env.API_KEY}&query=${params.searchTerm}&language=en-US&include_adult=false`
+    `https://api.themoviedb.org/3/search/movie?api_key=c0a753282bdc2008ffe4d6e4e1d6462c&query=${params.searchTerm}&language=en-US&include_adult=false`
   );
 
   const result = await data.results;
